@@ -2,11 +2,47 @@
 <html>
 <head>
 	<title>Video Process Analysis</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="//vjs.zencdn.net/5.11.6/video-js.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div id="main">
-<video></video>
-</div>
+<section class="main container-fluid">
+	<div class="row">
+		<div class="col-md-6 video-wrap">
+			<!-- <div id="message"></div> -->
+			<video id="video" class="video-js vjs-default-skin"
+			  controls preload="auto" width="640" height="264"
+			  data-setup='{"example_option":true}'>
+				 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+			</video>
+			<input id="videoPath" type="file" accept="video/*">
+			<section class="controls">
 
+			</section>
+		</div>
+		<div class="col-md-6">
+			<section class="processSteps">
+
+			</section>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<section class="gantt">
+
+			</section>
+		</div>
+	</div>
+
+</section>
+
+<script src="js/lib/jquery-3.1.0.min.js"></script>
+<script src="js/lib/bootstrap.js"></script>
+<script src="js/lib/knockout-3.4.0.js"></script>
+<script src="//vjs.zencdn.net/5.11.6/video.min.js"></script>
+<script src="node_modules/videojs-framebyframe/videojs.framebyframe.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

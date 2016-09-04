@@ -1,0 +1,25 @@
+{
+  "name": "video-process-analysis",
+  "version": "1.0.0",
+  "description": "A tool to analyze processes using video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holic101/video-process-analysis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holic101/video-process-analysis/issues"
+  },
+  "homepage": "https://github.com/Holic101/video-process-analysis#readme",
+  "dependencies": {
+    "videojs-framebyframe": "^1.0.1"
+  },
+  "devDependencies": {
+    "video.js": "^5.11.6"
+  }
+}
